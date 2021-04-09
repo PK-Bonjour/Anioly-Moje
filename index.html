@@ -14,6 +14,9 @@
         <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">
         <link href="style.css" rel="stylesheet">
 
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Tajawal&display=swap" rel="stylesheet">
+
         <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
         <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
@@ -21,19 +24,146 @@
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 
         </head>
-    <body>
+    <body onload="startTime()">
 
-        <div class="wrapper">
-            <h1 class="inner">KOT</h1>
-        
-        </div> 
-        
-        <style>
-        .inner {
-            margin: auto;
-          }
-        </style>
 
+            <div class="m-3">
+                <div class="container text-center blue-grey lighten-5 rounding rounded_one">
+                    <h1 class="welcome">WELCOME BACK: ADMIN !</h1>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card aqua-gradient">
+                            <div class="card-body">  
+                            <h4 class="card-title"><a id="day_of_week">Today is:</a></h4>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card peach-gradient">
+                            <div class="card-body text-center">  
+                            <h4 class="card-title"><a id="txt">HOURS</a></h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card ripe-malinka-gradient">
+                            <div class="card-body">  
+                            <h4 class="card-title"><a>Outside Temperature</a></h4>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pt-5"></div>
+            <div class="pt-5"></div>
+            <div class="pt-5"></div>
+
+                <div class="flip">
+                    <div class="front" style="background-image: url('kiczen.png')">
+                    <h1 class="text-shadow">KITCHEN</hi>
+                    </div>
+                    <div class="back">
+                    <h2>Angular</h2>
+                    <img src="rainbow.png" style="width: 40%;">
+                    </div>
+                </div>
+                <div class="flip">
+                    <div class="front" style="background-image: url('leaving.png')">
+                    <h1 class="text-shadow">LIVING ROOM</hi>
+                    </div>
+                    <div class="back">
+                    <h2>Angular</h2>
+                    <p>Good tools make application development quicker and easier to maintain than if you did everything by hand..</p>
+                    </div>
+                </div>
+                <div class="flip">
+                    <div class="front" style="background-image: url('bathroom.png')">
+                    <h1 class="text-shadow">BATHROOM</hi>
+                    </div>
+                    <div class="back">
+                    <h2>Angular</h2>
+                    <p>Good tools make application development quicker and easier to maintain than if you did everything by hand..</p>
+                    </div>
+                </div>
+                <div class="flip">
+                    <div class="front" style="background-image: url('eating.png')">
+                    <h1 class="text-shadow">MOUNTAIN</hi>
+                    </div>
+                    <div class="back">
+                    <h2>Angular</h2>
+                    <p>Good tools make application development quicker and easier to maintain than if you did everything by hand..</p>
+                    </div>
+                </div>
+                <div class="flip">
+                    <div class="front" style="background-image: url('study.png')">
+                    <h1 class="text-shadow">MOUNTAIN</hi>
+                    </div>
+                    <div class="back">
+                    <h2>Angular</h2>
+                    <p>Good tools make application development quicker and easier to maintain than if you did everything by hand..</p>
+                    </div>
+                </div>
+                <div class="flip">
+                    <div class="front" style="background-image: url('badroom_1.png')">
+                    <h1 class="text-shadow">MOUNTAIN</hi>
+                    </div>
+                    <div class="back">
+                    <h2>Angular</h2>
+                    <p>Good tools make application development quicker and easier to maintain than if you did everything by hand..</p>
+                    </div>
+                </div>
+                <div class="flip">
+                    <div class="front" style="background-image: url('batroom.png')">
+                    <h1 class="text-shadow">MOUNTAIN</hi>
+                    </div>
+                    <div class="back">
+                    <h2>Angular</h2>
+                    <p>Good tools make application development quicker and easier to maintain than if you did everything by hand..</p>
+                    </div>
+                </div>
+
+            <div class="pt-5"></div>
+
+            <div class="row">
+                <div class="col-md-3">
+                    <button class="button-1">Lorem ipsum dolor sit amet</button>
+                </div>
+                <div class="col-md-3">
+                    <button class="button-1">Lorem ipsum dolor sit amet</button>
+                </div>
+                <div class="col-md-3">
+                    <button class="button-1">Lorem ipsum dolor sit amet</button>
+                </div>
+                <div class="col-md-3">
+                    <button class="button-1">Lorem ipsum dolor sit amet</button>
+                </div>
+            </div>
 
     </body>
+
+    <script>
+        function startTime() {
+          var today = new Date();
+          var h = today.getHours();
+          var m = today.getMinutes();
+          var s = today.getSeconds();
+          m = checkTime(m);
+          s = checkTime(s);
+          document.getElementById('txt').innerHTML =
+          h + ":" + m + ":" + s;
+          var t = setTimeout(startTime, 500);
+        }
+        function checkTime(i) {
+          if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+          return i;
+        }
+    </script>
+
 </html>
