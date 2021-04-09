@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Weather</title>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script>
+    function gettingJSON(){
+        document.write("jquery loaded");
+        var city = "Choroszcz"
+        $.getJSON("http://api.openweathermap.org/data/2.5/weather?q=" + city + "&APPID=ed8384a309dc786e26638d4f92a5860e",function(json){
+            document.write(JSON.stringify(json));
+            var obj = JSON.parse(JSON.stringify(json));
+            console.log(obj);
+            console.log(obj.main.temp - 273.15 + "°C"); //get temperature
+            console.log("Current clouds visible: " + obj.clouds.all + "%"); //get clouds
+
+            var now = new Date(); 
+            var year = now.getFullYear();
+            var month = now.getMonth()+1; 
+            var day = now.getDate();
+            var hour = now.getHours();
+            var minute = now.getMinutes();
+            var second = now.getSeconds();
+
+            var weekday = new Array(7);
+            weekday[0] = "Sunday";
+            weekday[1] = "Monday";
+            weekday[2] = "Tuesday";
+            weekday[3] = "Wednesday";
+            weekday[4] = "Thursday";
+            weekday[5] = "Friday";
+            weekday[6] = "Saturday";
+            var day_of_week = weekday[now.getDay()];
+
+            console.log(hour + ":" + minute + ":" + second);
+            console.log(day + "/" + month + "/" + year);
+            console.log(day_of_week);
+
+
+
+        });
+    }
+    </script>
+
+
+
+</head>
+<body>
+<button id = "getIt" onclick = "gettingJSON()">Get JSON</button>
+</body>
+</html>
