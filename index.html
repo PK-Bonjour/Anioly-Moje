@@ -24,7 +24,7 @@
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 
         </head>
-    <body onload="startTime()">
+    <body>
 
 
             <div class="m-3">
@@ -36,21 +36,64 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-4">
-                        <div class="card aqua-gradient">
+                        <div class="card ripe-malinka-gradient">
                             <div class="card-body">  
-                            <h4 class="card-title"><a id="day_of_week">Today is:</a></h4>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <h4 class="card-title"><a>MONTH</a></h4>
+                                <h2 class="card-title"><a>DAY</a></h2>
+                                <h4 class="card-title"><a>YEAR</a></h4>
                             </div>
-                        </div>
+                        </div>             
                     </div>
                     <div class="col-md-4">
                         <div class="card peach-gradient">
                             <div class="card-body text-center">  
-                            <h4 class="card-title"><a id="txt">HOURS</a></h4>
+                                <a id="currentTime"></a>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-4">
+                        <div class="card ripe-malinka-gradient">
+                            <div class="card-body">  
+                                <img id="icon_weather" src="icons/sun.png" style="width: 30%;"/>
+                                <div class="pt-3"></div>
+                                <h4 class="card-title"><a>Jamajca</a></h4>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pt-5"></div>
+
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="card ripe-malinka-gradient">
+                            <div class="card-body">  
+                            <h4 class="card-title"><a>Outside Temperature</a></h4>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card ripe-malinka-gradient">
+                            <div class="card-body">  
+                            <h4 class="card-title"><a>Outside Temperature</a></h4>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card ripe-malinka-gradient">
+                            <div class="card-body">  
+                            <h4 class="card-title"><a>Outside Temperature</a></h4>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
                         <div class="card ripe-malinka-gradient">
                             <div class="card-body">  
                             <h4 class="card-title"><a>Outside Temperature</a></h4>
@@ -61,8 +104,26 @@
                 </div>
             </div>
 
+
             <div class="pt-5"></div>
-            <div class="pt-5"></div>
+
+            <div class="paddinkton">
+            <div class="row">
+                <div class="col-md-3">
+                    <button class="button-1">use photovoltaic and excess use to charge battery</button>
+                </div>
+                <div class="col-md-3">
+                    <button class="button-1">use photovoltaic and excess returned to network</button>
+                </div>
+                <div class="col-md-3">
+                    <button class="button-1">use photovoltaic and charge battery using network</button>
+                </div>
+                <div class="col-md-3">
+                    <button class="button-1">use battery and photovoltaics, shortage get from network</button>
+                </div>
+            </div>
+        </div>
+
             <div class="pt-5"></div>
 
                 <div class="flip">
@@ -70,8 +131,15 @@
                     <h1 class="text-shadow">KITCHEN</hi>
                     </div>
                     <div class="back">
-                    <h2>Angular</h2>
-                    <img src="rainbow.png" style="width: 40%;">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <img id="icon_weather" src="icons/thermometer.png" style="width: 90%;"/>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="pt-5"></div>
+                                <h1 id="kitchen_temp">0</h1>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="flip">
@@ -79,8 +147,15 @@
                     <h1 class="text-shadow">LIVING ROOM</hi>
                     </div>
                     <div class="back">
-                    <h2>Angular</h2>
-                    <p>Good tools make application development quicker and easier to maintain than if you did everything by hand..</p>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <img id="icon_weather" src="icons/thermometer.png" style="width: 90%;"/>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="pt-5"></div>
+                                <h1 id="living_temp">0</h1>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="flip">
@@ -88,82 +163,155 @@
                     <h1 class="text-shadow">BATHROOM</hi>
                     </div>
                     <div class="back">
-                    <h2>Angular</h2>
-                    <p>Good tools make application development quicker and easier to maintain than if you did everything by hand..</p>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <img id="icon_weather" src="icons/thermometer.png" style="width: 90%;"/>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="pt-5"></div>
+                                <h1 id="bathroom_temp">0</h1>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="flip">
                     <div class="front" style="background-image: url('eating.png')">
-                    <h1 class="text-shadow">MOUNTAIN</hi>
+                    <h1 class="text-shadow">DINING ROOM</h1>
                     </div>
                     <div class="back">
-                    <h2>Angular</h2>
-                    <p>Good tools make application development quicker and easier to maintain than if you did everything by hand..</p>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <img id="icon_weather" src="icons/thermometer.png" style="width: 90%;"/>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="pt-5"></div>
+                                <h1 id="dining_temp">0</h1>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="flip">
                     <div class="front" style="background-image: url('study.png')">
-                    <h1 class="text-shadow">MOUNTAIN</hi>
+                    <h1 class="text-shadow">STUDY ROOM</hi>
                     </div>
                     <div class="back">
-                    <h2>Angular</h2>
-                    <p>Good tools make application development quicker and easier to maintain than if you did everything by hand..</p>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <img id="icon_weather" src="icons/thermometer.png" style="width: 90%;"/>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="pt-5"></div>
+                                <h1 id="study_temp">0</h1>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="flip">
                     <div class="front" style="background-image: url('badroom_1.png')">
-                    <h1 class="text-shadow">MOUNTAIN</hi>
+                    <h1 class="text-shadow">BEDROOM 1</hi>
                     </div>
                     <div class="back">
-                    <h2>Angular</h2>
-                    <p>Good tools make application development quicker and easier to maintain than if you did everything by hand..</p>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <img id="icon_weather" src="icons/thermometer.png" style="width: 90%;"/>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="pt-5"></div>
+                                <h1 id="bedroom_1_temp">0</h1>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="flip">
                     <div class="front" style="background-image: url('batroom.png')">
-                    <h1 class="text-shadow">MOUNTAIN</hi>
+                    <h1 class="text-shadow">BEDROM 2</hi>
                     </div>
                     <div class="back">
-                    <h2>Angular</h2>
-                    <p>Good tools make application development quicker and easier to maintain than if you did everything by hand..</p>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <img id="icon_weather" src="icons/thermometer.png" style="width: 90%;"/>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="pt-5"></div>
+                                <h1 id="bedroom_2_temp">0</h1>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
             <div class="pt-5"></div>
 
-            <div class="row">
-                <div class="col-md-3">
-                    <button class="button-1">Lorem ipsum dolor sit amet</button>
-                </div>
-                <div class="col-md-3">
-                    <button class="button-1">Lorem ipsum dolor sit amet</button>
-                </div>
-                <div class="col-md-3">
-                    <button class="button-1">Lorem ipsum dolor sit amet</button>
-                </div>
-                <div class="col-md-3">
-                    <button class="button-1">Lorem ipsum dolor sit amet</button>
-                </div>
-            </div>
+<script>
+    window.onload = function() {
+  clock();  
+    function clock() {
+    var now = new Date();
+    var TwentyFourHour = now.getHours();
+    var hour = now.getHours();
+    var min = now.getMinutes();
+    var sec = now.getSeconds();
+    var mid = 'pm';
+    if (min < 10) {
+      min = "0" + min;
+    }
+    if (hour > 12) {
+      hour = hour - 12;
+    }    
+    if(hour==0){ 
+      hour=12;
+    }
+    if(TwentyFourHour < 12) {
+       mid = 'am';
+    }     
+  document.getElementById('currentTime').innerHTML =     hour+':'+min+':'+sec +' '+mid ;
+    setTimeout(clock, 1000);
+    }
+}
+
+</script>
+
+<script>
+    function change_icon(){
+        $("#icon_weather").attr("src","icons/tunder.png");
+    }
+</script>
+
+<script>
+
+    function oczekiwana_temperatura(){
+        var now = new Date();
+
+        //dni roboczne 24-5
+        if((now.getHours() >= 0) && (now.getHours() <= 4 && now.getMinutes <= 59) && (now.getDay() < 6) && (now.getMonth() != 7) && (now.getMonth() != 8)){
+            alert("kot");
+        }
+        //dni roboczne 5-24
+        if((now.getHours() >= 5) && (now.getHours() <= 23 && now.getMinutes <= 59 && (now.getDay() < 6) && (now.getMonth() != 7) && (now.getMonth() != 8))){
+            alert("kot");
+        }
+        //dni wolne od pracy
+        if((now.getHours() >= 0) && (now.getHours() <= 7 && now.getMinutes <= 59 && (now.getDay() > 5) && (now.getMonth() != 7) && (now.getMonth() != 8))){
+            alert("kot");
+        }
+        //dni wolne od pracy
+        if((now.getHours() >= 8) && (now.getHours() <= 23 && now.getMinutes <= 59 && (now.getDay() > 5) && (now.getMonth() != 7) && (now.getMonth() != 8))){
+            alert("kot");
+        }
+        //wakacje
+        if((now.getHours() >= 0) && (now.getHours() <= 23 && now.getMinutes <= 59 && (now.getMonth() >= 7) && (now.getMonth() <= 8))){
+            alert("kot");
+        }
+
+        console.log(now.getDay());
+
+    }
+
+
+</script>
+
+
+
 
     </body>
-
-    <script>
-        function startTime() {
-          var today = new Date();
-          var h = today.getHours();
-          var m = today.getMinutes();
-          var s = today.getSeconds();
-          m = checkTime(m);
-          s = checkTime(s);
-          document.getElementById('txt').innerHTML =
-          h + ":" + m + ":" + s;
-          var t = setTimeout(startTime, 500);
-        }
-        function checkTime(i) {
-          if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
-          return i;
-        }
-    </script>
 
 </html>

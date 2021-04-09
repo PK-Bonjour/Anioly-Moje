@@ -114,3 +114,22 @@
 .button-1:hover:before {
     transform: translate(4px, 4px);
 }
+
+.paddinkton{
+    margin-left: 70pt;
+    margin-right: 70pt;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Oswald:300,400);
+
+#currentTime {
+	 font-size: 30pt;
+	 text-align: center;
+	 font-family: 'Oswald';
+	 font-weight: 300;
+	 margin: 100px auto;
+}
+ 
+.card-fafont{
+    font-size: 50pt;
+}
