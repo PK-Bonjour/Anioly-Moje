@@ -37,6 +37,48 @@
             console.log(day + "/" + month + "/" + year);
             console.log(day_of_week);
 
+    if((obj.main.temp - 273.15) > 20){
+    moc_srednia_na_podtrzymanie_all_zrodla = 0;
+    podtrzymanie_plus_podniesienie_temp_o_1c_w_ciągu_1h = 0;
+    czas_spadku_temp_o_1c_bez_ogrzewania = 0;
+    }
+    if((obj.main.temp - 273.15) > 15 && (obj.main.temp - 273.15) <= 20){
+        moc_srednia_na_podtrzymanie_all_zrodla = 0.5;
+        podtrzymanie_plus_podniesienie_temp_o_1c_w_ciągu_1h = 2;
+        czas_spadku_temp_o_1c_bez_ogrzewania = 6;
+    }
+    if((obj.main.temp - 273.15) > 5 && (obj.main.temp - 273.15) <= 15){
+        moc_srednia_na_podtrzymanie_all_zrodla = 1;
+        podtrzymanie_plus_podniesienie_temp_o_1c_w_ciągu_1h = 4;
+        czas_spadku_temp_o_1c_bez_ogrzewania = 4;
+    }
+    if((obj.main.temp - 273.15) > 0 && (obj.main.temp - 273.15) <= 5){
+        moc_srednia_na_podtrzymanie_all_zrodla = 2;
+        podtrzymanie_plus_podniesienie_temp_o_1c_w_ciągu_1h = 5;
+        czas_spadku_temp_o_1c_bez_ogrzewania = 3;
+    }
+    if((obj.main.temp - 273.15) > -5 && (obj.main.temp - 273.15) <= 0){
+        moc_srednia_na_podtrzymanie_all_zrodla = 3;
+        podtrzymanie_plus_podniesienie_temp_o_1c_w_ciągu_1h = 6;
+        czas_spadku_temp_o_1c_bez_ogrzewania = 2;
+    }
+    if((obj.main.temp - 273.15) > -10 && (obj.main.temp - 273.15) <= -5){
+        moc_srednia_na_podtrzymanie_all_zrodla = 5;
+        podtrzymanie_plus_podniesienie_temp_o_1c_w_ciągu_1h = 7;
+        czas_spadku_temp_o_1c_bez_ogrzewania = 1;
+    }
+    if((obj.main.temp - 273.15) > -20 && (obj.main.temp - 273.15) <= -10){
+        moc_srednia_na_podtrzymanie_all_zrodla = 7;
+        podtrzymanie_plus_podniesienie_temp_o_1c_w_ciągu_1h = 10;
+        czas_spadku_temp_o_1c_bez_ogrzewania = 0.5;
+    }
+    if((obj.main.temp - 273.15) <= -20){
+        moc_srednia_na_podtrzymanie_all_zrodla = 9;
+        podtrzymanie_plus_podniesienie_temp_o_1c_w_ciągu_1h = 12;
+        czas_spadku_temp_o_1c_bez_ogrzewania = 0.25;
+    }
+
+
 
 
         });

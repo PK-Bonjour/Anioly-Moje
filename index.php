@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Landing Page</title>
+        <meta name="description" content="description">
+        <meta name="keywords" content="keywords">
+        <meta name="author" content="Kozzuro">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">
+        <link href="style.css" rel="stylesheet">
+
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Tajawal&display=swap" rel="stylesheet">
+
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+
+        </head>
+    <body>
+
+
+            <div class="m-3">
+                <div class="container text-center blue-grey lighten-5 rounding rounded_one">
+                    <h1 class="welcome">WELCOME BACK: ADMIN !</h1>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card ripe-malinka-gradient">
+                            <div class="card-body">  
+                                <h4 class="card-title"><a>MONTH</a></h4>
+                                <h2 class="card-title"><a>DAY</a></h2>
+                                <h4 class="card-title"><a>YEAR</a></h4>
+                            </div>
+                        </div>             
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card peach-gradient">
+                            <div class="card-body text-center">  
+                                <a id="currentTime"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card ripe-malinka-gradient">
+                            <div class="card-body">  
+                                <img id="icon_weather" src="icons/sun.png" style="width: 30%;"/>
+                                <div class="pt-3"></div>
+                                <h4 class="card-title"><a>Jamajca</a></h4>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pt-5"></div>
+
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="card ripe-malinka-gradient">
+                            <div class="card-body">  
+                            <h4 class="card-title"><a>Outside Temperature</a></h4>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card ripe-malinka-gradient">
+                            <div class="card-body">  
+                            <h4 class="card-title"><a>Outside Temperature</a></h4>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card ripe-malinka-gradient">
+                            <div class="card-body">  
+                            <h4 class="card-title"><a>Outside Temperature</a></h4>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card ripe-malinka-gradient">
+                            <div class="card-body">  
+                            <h4 class="card-title"><a>Outside Temperature</a></h4>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="pt-5"></div>
+
+            <div class="paddinkton">
+            <div class="row">
+                <div class="col-md-3">
+                    <button class="button-1">use photovoltaic and excess use to charge battery</button>
+                </div>
+                <div class="col-md-3">
+                    <button class="button-1">use photovoltaic and excess returned to network</button>
+                </div>
+                <div class="col-md-3">
+                    <button class="button-1">use photovoltaic and charge battery using network</button>
+                </div>
+                <div class="col-md-3">
+                    <button class="button-1">use battery and photovoltaics, shortage get from network</button>
+                </div>
+            </div>
+        </div>
+
+            <div class="pt-5"></div>
+
+                <div class="flip">
+                    <div class="front" style="background-image: url('kiczen.png')">
+                    <h1 class="text-shadow">KITCHEN</hi>
+                    </div>
+                    <div class="back">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <img id="icon_weather" src="icons/thermometer.png" style="width: 90%;"/>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="pt-5"></div>
+                                <h1 id="kitchen_temp">0</h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip">
+                    <div class="front" style="background-image: url('leaving.png')">
+                    <h1 class="text-shadow">LIVING ROOM</hi>
+                    </div>
+                    <div class="back">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <img id="icon_weather" src="icons/thermometer.png" style="width: 90%;"/>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="pt-5"></div>
+                                <h1 id="living_temp">0</h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip">
+                    <div class="front" style="background-image: url('bathroom.png')">
+                    <h1 class="text-shadow">BATHROOM</hi>
+                    </div>
+                    <div class="back">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <img id="icon_weather" src="icons/thermometer.png" style="width: 90%;"/>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="pt-5"></div>
+                                <h1 id="bathroom_temp">0</h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip">
+                    <div class="front" style="background-image: url('eating.png')">
+                    <h1 class="text-shadow">DINING ROOM</h1>
+                    </div>
+                    <div class="back">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <img id="icon_weather" src="icons/thermometer.png" style="width: 90%;"/>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="pt-5"></div>
+                                <h1 id="dining_temp">0</h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip">
+                    <div class="front" style="background-image: url('study.png')">
+                    <h1 class="text-shadow">STUDY ROOM</hi>
+                    </div>
+                    <div class="back">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <img id="icon_weather" src="icons/thermometer.png" style="width: 90%;"/>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="pt-5"></div>
+                                <h1 id="study_temp">0</h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip">
+                    <div class="front" style="background-image: url('badroom_1.png')">
+                    <h1 class="text-shadow">BEDROOM 1</hi>
+                    </div>
+                    <div class="back">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <img id="icon_weather" src="icons/thermometer.png" style="width: 90%;"/>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="pt-5"></div>
+                                <h1 id="bedroom_1_temp">0</h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip">
+                    <div class="front" style="background-image: url('batroom.png')">
+                    <h1 class="text-shadow">BEDROM 2</hi>
+                    </div>
+                    <div class="back">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <img id="icon_weather" src="icons/thermometer.png" style="width: 90%;"/>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="pt-5"></div>
+                                <h1 id="bedroom_2_temp">0</h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            <div class="pt-5"></div>
+
+<script>
+    window.onload = function() {
+  clock();  
+    function clock() {
+    var now = new Date();
+    var TwentyFourHour = now.getHours();
+    var hour = now.getHours();
+    var min = now.getMinutes();
+    var sec = now.getSeconds();
+    var mid = 'pm';
+    if (min < 10) {
+      min = "0" + min;
+    }
+    if (hour > 12) {
+      hour = hour - 12;
+    }    
+    if(hour==0){ 
+      hour=12;
+    }
+    if(TwentyFourHour < 12) {
+       mid = 'am';
+    }     
+  document.getElementById('currentTime').innerHTML =     hour+':'+min+':'+sec +' '+mid ;
+    setTimeout(clock, 1000);
+    }
+}
+
+</script>
+
+<script>
+    function change_icon(){
+        $("#icon_weather").attr("src","icons/tunder.png");
+    }
+</script>
+
+<script>
+
+    function oczekiwana_temperatura(){
+        var now = new Date();
+
+        //dni roboczne 24-5
+        if((now.getHours() >= 0) && (now.getHours() <= 4 && now.getMinutes <= 59) && (now.getDay() < 6) && (now.getMonth() != 7) && (now.getMonth() != 8)){
+            alert("kot");
+        }
+        //dni roboczne 5-24
+        if((now.getHours() >= 5) && (now.getHours() <= 23 && now.getMinutes <= 59 && (now.getDay() < 6) && (now.getMonth() != 7) && (now.getMonth() != 8))){
+            alert("kot");
+        }
+        //dni wolne od pracy
+        if((now.getHours() >= 0) && (now.getHours() <= 7 && now.getMinutes <= 59 && (now.getDay() > 5) && (now.getMonth() != 7) && (now.getMonth() != 8))){
+            alert("kot");
+        }
+        //dni wolne od pracy
+        if((now.getHours() >= 8) && (now.getHours() <= 23 && now.getMinutes <= 59 && (now.getDay() > 5) && (now.getMonth() != 7) && (now.getMonth() != 8))){
+            alert("kot");
+        }
+        //wakacje
+        if((now.getHours() >= 0) && (now.getHours() <= 23 && now.getMinutes <= 59 && (now.getMonth() >= 7) && (now.getMonth() <= 8))){
+            alert("kot");
+        }
+
+        console.log(now.getDay());
+
+    }
+
+
+</script>
+
+
+
+
+    </body>
+
+</html>
