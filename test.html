@@ -7,7 +7,7 @@
 <script>
     function gettingJSON(){
         document.write("jquery loaded");
-        var city = "Choroszcz"
+        var city = "Trewir"
         $.getJSON("http://api.openweathermap.org/data/2.5/weather?q=" + city + "&APPID=ed8384a309dc786e26638d4f92a5860e",function(json){
             document.write(JSON.stringify(json));
             var obj = JSON.parse(JSON.stringify(json));
