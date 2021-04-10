@@ -502,59 +502,73 @@ if ($conn->connect_error) {
             if(now.getDay() < 6 && now.getHours() >= 6 && now.getHours() <= 12 && now.getMinutes() <= 59 && (now.getMonth() >= 1 && now.getMonth() <= 3) || (now.getMonth() >= 10 && now.getMonth() <= 12)){
                 koszt_1kw_pobrane = 1;
                 koszt_1kw_oddane = 0.5;
+                Cookies.set("koszt_pobranego", koszt_1kw_pobrane);
             }
             if(now.getDay() < 6 && now.getHours() >= 6 && now.getHours() <= 12 && now.getMinutes() <= 59 && (now.getMonth() >= 1 && now.getMonth() <= 3) || (now.getMonth() >= 10 && now.getMonth() <= 12)){
                 koszt_1kw_pobrane = 2;
                 koszt_1kw_oddane = 2.5;
+                Cookies.set("koszt_pobranego", koszt_1kw_pobrane);
             }
             if(now.getDay() < 6 && now.getHours() >= 6 && now.getHours() <= 12 && now.getMinutes() <= 59 && (now.getMonth() >= 1 && now.getMonth() <= 3) || (now.getMonth() >= 10 && now.getMonth() <= 12)){
                 koszt_1kw_pobrane = 1;
                 koszt_1kw_oddane = 1;
+                Cookies.set("koszt_pobranego", koszt_1kw_pobrane);
             }
             if(now.getDay() < 6 && now.getHours() >= 6 && now.getHours() <= 12 && now.getMinutes() <= 59 && (now.getMonth() >= 1 && now.getMonth() <= 3) || (now.getMonth() >= 10 && now.getMonth() <= 12)){
                 koszt_1kw_pobrane = 2;
                 koszt_1kw_oddane = 2.5;
+                Cookies.set("koszt_pobranego", koszt_1kw_pobrane);
             }
             if(now.getDay() < 6 && now.getHours() >= 6 && now.getHours() <= 12 && now.getMinutes() <= 59 && (now.getMonth() >= 1 && now.getMonth() <= 3) || (now.getMonth() >= 10 && now.getMonth() <= 12)){
                 koszt_1kw_pobrane = 1;
                 koszt_1kw_oddane = 0.5;
+                Cookies.set("koszt_pobranego", koszt_1kw_pobrane);
             }
             if(now.getDay() > 5 && now.getHours() >= 6 && now.getHours() <= 12 && now.getMinutes() <= 59 && (now.getMonth() >= 1 && now.getMonth() <= 3) || (now.getMonth() >= 10 && now.getMonth() <= 12)){
                 koszt_1kw_pobrane = 1;
                 koszt_1kw_oddane = 0.5;
+                Cookies.set("koszt_pobranego", koszt_1kw_pobrane);
             }
             //Miesiace 4-9
             if(now.getDay() < 6 && now.getHours() >= 0 && now.getHours() <= 5 && now.getMinutes() <= 59 && now.getMonth() >= 4 && now.getMonth() <= 9){
                 koszt_1kw_pobrane = 1;
                 koszt_1kw_oddane = 0.5;
+                Cookies.set("koszt_pobranego", koszt_1kw_pobrane);
             }
             if(now.getDay() < 6 && now.getHours() >=  6 && now.getHours() <= 14 && now.getMinutes() <= 59 && now.getMonth() >= 4 && now.getMonth() <= 9){
                 koszt_1kw_pobrane = 2;
                 koszt_1kw_oddane = 2.5;
+                Cookies.set("koszt_pobranego", koszt_1kw_pobrane);
             }
             if(now.getDay() < 6 && now.getHours() >= 15 && now.getHours() <= 16 && now.getMinutes() <= 59 && now.getMonth() >= 4 && now.getMonth() <= 9){
                 koszt_1kw_pobrane = 1;
                 koszt_1kw_oddane = 1;
+                Cookies.set("koszt_pobranego", koszt_1kw_pobrane);
             }
             if(now.getDay() < 6 && now.getHours() >= 17 && now.getHours() <= 21 && now.getMinutes() <= 59 && now.getMonth() >= 4 && now.getMonth() <= 9){
                 koszt_1kw_pobrane = 2;
                 koszt_1kw_oddane = 2.5;
+                Cookies.set("koszt_pobranego", koszt_1kw_pobrane);
             }
             if(now.getDay() < 6 && now.getHours() >= 22 && now.getHours() <= 23 && now.getMinutes() <= 59 && now.getMonth() >= 4 && now.getMonth() <= 9){
                 koszt_1kw_pobrane = 1;
                 koszt_1kw_oddane = 0.5;
+                Cookies.set("koszt_pobranego", koszt_1kw_pobrane);
             }
             if(now.getDay() > 5 && now.getHours() >= 0 && now.getHours() <= 11 && now.getMinutes() <= 59 && now.getMonth() >= 4 && now.getMonth() <= 9){
                 koszt_1kw_pobrane = 1;
                 koszt_1kw_oddane = 0.5;
+                Cookies.set("koszt_pobranego", koszt_1kw_pobrane);
             }
             if(now.getDay() > 5 && now.getHours() >= 12 && now.getHours() <= 14 && now.getMinutes() <= 59 && now.getMonth() >= 4 && now.getMonth() <= 9){
                 koszt_1kw_pobrane = 0.5;
                 koszt_1kw_oddane = 0.25;
+                Cookies.set("koszt_pobranego", koszt_1kw_pobrane);
             }
             if(now.getDay() > 5 && now.getHours() >= 15 && now.getHours() <= 23 && now.getMinutes() <= 59 && now.getMonth() >= 4 && now.getMonth() <= 9){
                 koszt_1kw_pobrane = 1;
                 koszt_1kw_oddane = 0.5;
+                Cookies.set("koszt_pobranego", koszt_1kw_pobrane);
             }
 
             console.log(koszt_1kw_pobrane);
@@ -567,6 +581,7 @@ if ($conn->connect_error) {
                 var total_waste = Number(zmienna_lokalna_1) + 12;
             }
             console.log("Total wasted: " + total_waste);
+            Cookies.set("total_waste", total_waste);
 
         });
     });
@@ -576,7 +591,7 @@ if ($conn->connect_error) {
 
 
 <script>
-    var temperatura_inside = 0;
+    let temperatura_inside = 0;
      $(document).ready(function() {
     ///////////LOSOWANKO kV na akumulatorze
     var battery_buffor = Math.floor(Math.random() * (7 - 0) ) + 0;
@@ -585,6 +600,7 @@ if ($conn->connect_error) {
     ///////////LOSOWANKO L na boilerze
     var battery_buffor = Math.floor(Math.random() * (150 - 0) ) + 0;
        $('#boiler_buffor').text(battery_buffor + "L");
+       Cookies.set("boiler_buffor_cookie", battery_buffor);
 
     ///////////LOSOWANKO temperatury wewnętrznej
     temperatura_inside = Math.floor(Math.random() * (23 - 12) ) + 12;
@@ -602,7 +618,7 @@ if ($conn->connect_error) {
             function clock() {
             var now = new Date();
             var TwentyFourHour = now.getHours();
-            var hour = now.getHours();
+            var hour = now.getHours() + inc;
             var min = now.getMinutes();
             var sec = now.getSeconds();
             var mid = 'pm';
@@ -622,35 +638,55 @@ if ($conn->connect_error) {
     var value_plus_minus = 0;
     var temp_ocz = Cookies.get('ciastko_temperatura_oczekiwana');
     var czastspadku = Cookies.get('czas_spadku_o_1_s_C');
-    var temp_wew_2 = 0;
+    let inc = 0
     function add_one(){
-            if(Number.temp_ocz < temperatura_inside){
-                temperatura_inside--;
-                temp_wew_2 = temperatura_inside + temp_wew_2;
+        console.log(temp_ocz);
+            if(temp_ocz < temperatura_inside){
+                temperatura_inside = -- temperatura_inside;
+                $('#temperature_inside_kitchen').text(temperatura_inside + "°C");
+                $('#temperature_inside_livingroom').text(temperatura_inside + "°C");
+                $('#temperature_inside_bathroom').text(temperatura_inside + "°C");
+                $('#temperature_inside_diningroom').text(temperatura_inside + "°C");
+                $('#temperature_inside_studyroom').text(temperatura_inside + "°C");
+                $('#temperature_inside_bedroom_1').text(temperatura_inside + "°C");
+                $('#temperature_inside_bedroom_2').text(temperatura_inside + "°C");
             }
             
-            if(Number.temp_ocz > temperatura_inside){
-                temperatura_inside++;
-                temp_wew_2 = temperatura_inside + temp_wew_2;
+            if(temp_ocz > temperatura_inside){
+                temperatura_inside = ++ temperatura_inside;
+                $('#temperature_inside_kitchen').text(temperatura_inside + "°C");
+                $('#temperature_inside_livingroom').text(temperatura_inside + "°C");
+                $('#temperature_inside_bathroom').text(temperatura_inside + "°C");
+                $('#temperature_inside_diningroom').text(temperatura_inside + "°C");
+                $('#temperature_inside_studyroom').text(temperatura_inside + "°C");
+                $('#temperature_inside_bedroom_1').text(temperatura_inside + "°C");
+                $('#temperature_inside_bedroom_2').text(temperatura_inside + "°C");
             }
 
-            if(Number.temp_ocz == temperatura_inside){
-                $('#temperature_inside_kitchen').text(temp_wew_2 + "°C");
-                $('#temperature_inside_livingroom').text(temp_wew_2 + "°C");
-                $('#temperature_inside_bathroom').text(temp_wew_2 + "°C");
-                $('#temperature_inside_diningroom').text(temp_wew_2 + "°C");
-                $('#temperature_inside_studyroom').text(temp_wew_2 + "°C");
-                $('#temperature_inside_bedroom_1').text(temp_wew_2 + "°C");
-                $('#temperature_inside_bedroom_2').text(temp_wew_2 + "°C");
+            if(temp_ocz == temperatura_inside){
+                $('#temperature_inside_kitchen').text(temperatura_inside + "°C");
+                $('#temperature_inside_livingroom').text(temperatura_inside + "°C");
+                $('#temperature_inside_bathroom').text(temperatura_inside + "°C");
+                $('#temperature_inside_diningroom').text(temperatura_inside + "°C");
+                $('#temperature_inside_studyroom').text(temperatura_inside + "°C");
+                $('#temperature_inside_bedroom_1').text(temperatura_inside + "°C");
+                $('#temperature_inside_bedroom_2').text(temperatura_inside + "°C");
             }
-                $('#temperature_inside_kitchen').text(temp_wew_2 + "°C");
-                $('#temperature_inside_livingroom').text(temp_wew_2 + "°C");
-                $('#temperature_inside_bathroom').text(temp_wew_2 + "°C");
-                $('#temperature_inside_diningroom').text(temp_wew_2 + "°C");
-                $('#temperature_inside_studyroom').text(temp_wew_2 + "°C");
-                $('#temperature_inside_bedroom_1').text(temp_wew_2 + "°C");
-                $('#temperature_inside_bedroom_2').text(temp_wew_2 + "°C");
-            console.log(temp_wew_2);
+            inc++;
+            console.log(temperatura_inside);
+            let total_waste_cookies = Cookies.get("total_waste");
+            console.log(total_waste_cookies);
+
+            let generator_cookies = Cookies.get("power_genertor");
+            console.log(generator_cookies);
+
+            total_waste_cookies = total_waste_cookies - generator_cookies;
+            console.log(total_waste_cookies);
+
+            let koszt_pobranego_go = Cookies.get("koszt_pobranego");
+            console.log(koszt_pobranego_go);
+
+            var total_costs = total_waste_cookies * koszt_pobranego_go;
     }
 </script>
 
@@ -675,6 +711,7 @@ if ($result->num_rows > 0) {
         $(document).ready(function() {
         var power_gen = <?php echo $row['POWER_GEN']; ?>;
         $('#power_foto').text(power_gen + "kW");
+        Cookies.set("power_genertor", power_gen);
         });
     </script>
 
